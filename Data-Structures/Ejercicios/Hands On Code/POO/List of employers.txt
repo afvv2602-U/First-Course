@@ -1,0 +1,6 @@
+Name: Lucia Position: Writer Salary: 18000 Years: 1
+Name: Jorge Position: Security Salary: 19000 Years: 2
+Name: Allie Position: Human Resources Salary: 18000 Years: 1
+Name: Sergio Position: Backend Developer Salary: 18000 Years: 1
+Name: Nerea Position: Full-Stack Developer Salary: 19600 Years: 1
+Name: Rodrigo Position: Receptionist Salary: 18000 Years: 2

@@ -11,7 +11,7 @@ class ListaHash:
             return True
         else:
             return False
-        
+            
     def insertar(self, codigo, nombre):
         elementoInsertar = Nodo(codigo, nombre)
         if self.listaVacia():
