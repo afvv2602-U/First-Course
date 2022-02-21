@@ -5,7 +5,5 @@ def main():
     opcion = int(input('1.Consultar Recetas\n2.Añadir Recetas\n3.Borrar Recetas\n'))
     menuPrincipal(opcion)
     
-
-
 if __name__ == "__main__":
     main()
