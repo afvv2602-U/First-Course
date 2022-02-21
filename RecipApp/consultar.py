@@ -36,6 +36,7 @@ def mostrarTusRecetas():
     #Si el directorio existe entonces vamos a mostrar todas las recetas que contiene
     else:
         listado = f.separarCadenas(directoryTR)
+        f.quickSortCategories(listado,0,len(listado)-1)
         print(*listado,sep='\n')
         receta = str(input('¿Que receta quieres ver?\n'))
         buscarReceta(receta,listado,directoryTR)
@@ -46,12 +47,14 @@ def explorar():
     if checkDirectoryPath(directoryEX):
         cargarRecetas()
         listado = f.separarCadenas(directoryEX)
+        f.quickSortCategories(listado,0,len(listado)-1)
         print(*listado, sep='\n')
         receta = str(input('¿Que receta quieres ver?\n')).title()
         buscarRecetaEX(receta,listado,directoryEX)
     #Si ya existe directamente te muestran las recetas que hay dentro
     else:
         listado = f.separarCadenas(directoryEX)
+        f.quickSortCategories(listado,0,len(listado)-1)
         print(*listado, sep='\n')
         receta = str(input('¿Que receta quieres ver?\n')).title()
         buscarRecetaEX(receta,listado,directoryEX)
