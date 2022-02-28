@@ -3,7 +3,9 @@ from Vehiculos import Vehiculo,Coche,Tanque,Bicicleta,Limusina,Camion,Triciclo
 def main():
     vehiculos = creacionObjetos()
     for actual in vehiculos:
-        actual.__str__()
+        #Visualizamos los datos de los objetos creados
+        print(actual.__str__())
+    
 
 def creacionObjetos():
     vehiculos = []
