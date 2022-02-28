@@ -5,7 +5,8 @@ def main():
     for actual in vehiculos:
         #Visualizamos los datos de los objetos creados
         print(actual.__str__())
-    
+        metodosAdicionales(actual)
+        
 
 def creacionObjetos():
     vehiculos = []
@@ -24,6 +25,12 @@ def creacionObjetos():
     vehiculos.append(camion)
     vehiculos.append(triciclo)
     return vehiculos
+
+def metodosAdicionales(actual : object):
+    if type(actual) is Camion:
+        actual.potenciaFuego()
+    if type(actual) is Triciclo:
+        actual.sonarBocina()
 
 if __name__ == '__main__':
     main()
